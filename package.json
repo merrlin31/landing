@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-pug": "^5.0.0",
@@ -17,5 +18,9 @@
     "gulp.spritesmith": "^6.13.0",
     "rimraf": "^3.0.2",
     "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0"
   }
 }
