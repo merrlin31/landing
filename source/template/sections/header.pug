@@ -2,9 +2,10 @@ header.header
 
     .header__top 
         .container 
-            .contacts 
-                a.contact(href="tel:+380639999999")
-                    i.fa-solid.fa-mobile-screen
-                    span.contact__text 6337 3128
+            include contact 
 
-    .header__bottom 
+    .container
+        .header__bottom
+            .logo: img.logo__picture(src="images/logo.png" alt="picture")
+            include nav
+            a.button.header_button.button--red(href="#") Free Consultation
