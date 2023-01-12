@@ -95,12 +95,9 @@
         font-size: 0.875rem;
 
         &:focus {
-            border: 1px solid red;
+            outline: 2px solid #61b9e2;
             box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
         }
-        // &:active {
-        //     border: 10px solid red;
-        // }
     }
 
     .button {
