@@ -1,6 +1,7 @@
 (function() {
     const openFormButton = document.querySelector('.arrow-down');
     const form = document.querySelector('.form');
+    const nav = document.querySelector('.nav');
 
     if (openFormButton) {
         openFormButton.addEventListener('click', function(e) {
@@ -18,6 +19,19 @@
                 console.log('Is no valid');
             }
         })
+    }
+
+    if (nav) {
+        nav.addEventListener('click', function(e) {
+            let target = e.target;
+
+            if (target.tagName.toLowerCase() !== 'a') {
+                return;
+            }
+
+            e.preventDefault();
+            merrlin.navigation.toggleToActiveLink(target);
+        });
     }
 
 }());
