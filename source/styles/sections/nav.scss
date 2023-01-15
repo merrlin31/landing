@@ -1,8 +1,16 @@
 .nav {
     display: inline-block;
     vertical-align: top;
-    padding-top: 7px;
-    margin-right: 15px;
+    margin-left: 165px;
+
+    @media (max-width: 1080px) {
+        margin-left: 100px;
+    }
+
+    @media (max-width: 1000px) {
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
 
     &__link {
         display: inline-block;
@@ -32,6 +40,14 @@
 
         &:last-child::after {
             display: none;
+        }
+
+        @media (max-width: 460px) {
+            display: block;
+    
+            &::after {
+                display: none;
+            }
         }
     }
 }
